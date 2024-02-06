@@ -1,0 +1,43 @@
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../assets/img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.navbar a,
+.navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0;
+    white-space: nowrap;
+    transition: 0.3s;
+    letter-spacing: 0.4px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    color: #fff;
+}
+
+.dropdown-menu li a {
+    text-transform: capitalize;
+}
+
+.navbar .dropdown-menu {
+    display: block;
+    transform: translateY(10%);
+    opacity: 0%;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.navbar .dropdown:hover>.dropdown-menu {
+    display: block;
+    transform: translateY(0);
+    opacity: 100%;
+}

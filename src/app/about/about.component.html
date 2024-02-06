@@ -1,0 +1,14 @@
+<div class="bg-body-tertiary py-5">
+    <div class="container">
+        <div class="row text-center gap-5 justify-content-start">
+            <div *ngFor="let item of products" class="col-3 border border-2 shadow-custom ">
+                <div class="inner">
+                    <img src="{{item.img}}" alt="">
+                    <h2>{{item.title}}</h2>
+                    <p>{{item.desc}}</p>
+                    <p>Price is : {{item.price}}$</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
