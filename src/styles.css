@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style-type: none;
+}
+
+.bg-nav-footer {
+    background-color: rgb(44, 62, 80);
+}
+
+img{
+    width: 20% !important;
+}
+
+.bg-main {
+    background-color: rgb(26, 188, 156);
+}
+
+.line {
+    height: 4px;
+    width: 80px;
+    background-color: white;
+}

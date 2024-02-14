@@ -1,0 +1,16 @@
+img{
+    width: 100% !important;
+}
+
+button:hover .layer{
+    opacity: 80%;
+}
+
+.layer{
+    opacity: 0;
+    transition: 1s opacity;
+}
+
+.layer i{
+    font-size: 12rem;
+}

@@ -1,0 +1,35 @@
+<div class="container d-flex flex-column align-items-center">
+    <h2 class="mt-5">PORTFOLIO COMPONENT</h2>
+    <div class="d-flex align-items-center gap-3 my-3">
+        <div class="line bg-black"></div>
+        <i class="fa-solid fa-star"></i>
+        <div class="line bg-black"></div>
+    </div>
+
+    <div class="row">
+        <div *ngFor="let pic of pics; index as i" class="cus-card col-4">
+            <button type="button" class="btn" data-bs-toggle="modal" [attr.data-bs-target]="'#'+'i'">
+                <div class="position-relative overflow-hidden rounded-3">
+                    <img src="{{pic}}" alt="">
+                    <div
+                        class="layer bg-main position-absolute w-100 h-100 top-0 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus text-white"></i>
+                    </div>
+                </div>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal" id="{{'i'}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body p-0">
+                            <div class="w-100">
+                                <img src="{{pic}}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
